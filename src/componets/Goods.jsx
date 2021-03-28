@@ -1,21 +1,34 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import {getAllGoods} from './../asyncActions/asyncActions'
 
-class Goods extends React.Component {
-   componentDidMount() {
-      fetch('./db.json')
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-   }
+function Goods () {
+   const dispatch = useDispatch();
+   const mainGoods = useSelector((state) => state.reducer);
+
+   useEffect(() => {
+      dispatch(getAllGoods());
+    }, []);
 
 
-
-
-   render() {
+   
       return(
-         <h1>GOODS</h1>
+         <div>
+            <h1>GOODS</h1>
+            <ul>
+               {
+                  mainGoods.map(item => {
+                     return <li>
+                        {item.title}
+                     </li>
+                  })
+               }
+            </ul>
+         </div>
       )
    }
-}
+
 
 
 export default Goods
