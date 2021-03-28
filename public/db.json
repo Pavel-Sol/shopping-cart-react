@@ -1,0 +1,8 @@
+   {
+      "goods": [
+        { "id": 1, "title": "dress aaa", "price": "250", "imgLink" : "https://cdn1.ozone.ru/multimedia/1017317113.jpg", "sizes":["s", "xs", "m"] },
+        { "id": 2, "title": "dress bbb", "price": "175", "imgLink" : "https://cdn1.ozone.ru/multimedia/1026427798.jpg", "sizes":["s", "xs", "m"] },
+        { "id": 3, "title": "dress ccc", "price": "225", "imgLink" : "https://cdn1.ozone.ru/multimedia/1022851248.jpg", "sizes":["s", "xs", "m"] },
+        { "id": 4, "title": "dress eee", "price": "190", "imgLink" : "https://cdn1.ozone.ru/multimedia/1017540691.jpg", "sizes":["s", "xs", "m"] }
+      ]
+    }
