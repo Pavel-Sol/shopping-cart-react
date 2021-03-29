@@ -11,7 +11,10 @@ function CartMini() {
       const itemsLS = localStorage.getItem('cartItems');
       // console.log(JSON.parse(itemsLS))
 
-      dispatch(loadingFromLS(JSON.parse(itemsLS)))
+      if(JSON.parse(itemsLS) !== null) {
+         dispatch(loadingFromLS(JSON.parse(itemsLS)))
+      }
+
     }, []);
 
    return (
@@ -20,7 +23,7 @@ function CartMini() {
               (cartItems.length > 0) &&
                   cartItems.map(item => {
                      return <li>
-                        {item.title}
+                        {item.title} size: {item.size} count: {item.count}
                      </li>
                   })
                }

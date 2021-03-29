@@ -1,11 +1,11 @@
    {
       "goods": [
-        { "id": 1, "title": "dress aaa", "price": 250, "imgLink" : "http://img01.taobaocdn.com/bao/uploaded/i1/T11dmDXjpVXXcXtaPb_092818.jpg", "sizes":["s", "xs", "m"], "count": 1 },
-        { "id": 2, "title": "dress bbb", "price": 175, "imgLink" : "http://img02.taobaocdn.com/imgextra/i2/719531986/T2sLx1XlNcXXXXXXXX_!!719531986.jpg", "sizes":["s", "xs", "m"], "count": 1 },
-        { "id": 3, "title": "dress ccc", "price": 225, "imgLink" : "https://omoe.com.ua/image/cache/data/vzuvshoes/vesna-men/krossovki-vrm-7/vrm-5489/nikeairmaxsiniy5-1200x900.jpg", "sizes":["s", "xs", "m"], "count": 1 },
-        { "id": 4, "title": "dress eee", "price": 190, "imgLink" : "https://images.ua.prom.st/1610152979_w640_h640_krossovki-muzhskie-nike.jpg", "sizes":["s", "xs", "m"], "count": 1 },
-        { "id": 5, "title": "dress zzz", "price": 145, "imgLink" : "https://images.ua.prom.st/1745606643_muzhskie-krossovki-adidas.jpg", "sizes":["s", "xs", "m"], "count": 1 },
-        { "id": 6, "title": "dress xxx", "price": 185, "imgLink" : "https://biteshop.site/img/14612983_1920.jpg", "sizes":["s", "xs", "m"], "count": 1 },
-        { "id": 7, "title": "dress yyy", "price": 145, "imgLink" : "https://instella.ru/grph/221079-800x800-s/?h=e68dcb0a2ef8e427877e93dfdf85dc68", "sizes":["s", "xs", "m"], "count": 1 }
+        { "id": 1, "title": "aaa", "price": 250, "imgLink" : "http://img01.taobaocdn.com/bao/uploaded/i1/T11dmDXjpVXXcXtaPb_092818.jpg", "availableSizes":["41", "42"], "count": 1 },
+        { "id": 2, "title": "bbb", "price": 175, "imgLink" : "http://img02.taobaocdn.com/imgextra/i2/719531986/T2sLx1XlNcXXXXXXXX_!!719531986.jpg", "availableSizes":["40", "41", "42"], "count": 1 },
+        { "id": 3, "title": "ccc", "price": 225, "imgLink" : "https://omoe.com.ua/image/cache/data/vzuvshoes/vesna-men/krossovki-vrm-7/vrm-5489/nikeairmaxsiniy5-1200x900.jpg", "availableSizes":["40", "41", "42"], "count": 1 },
+        { "id": 4, "title": "eee", "price": 190, "imgLink" : "https://images.ua.prom.st/1610152979_w640_h640_krossovki-muzhskie-nike.jpg", "availableSizes":["40", "41", "42"], "count": 1 },
+        { "id": 5, "title": "zzz", "price": 145, "imgLink" : "https://images.ua.prom.st/1745606643_muzhskie-krossovki-adidas.jpg", "availableSizes":["40", "41", "42"], "count": 1 },
+        { "id": 6, "title": "xxx", "price": 185, "imgLink" : "https://biteshop.site/img/14612983_1920.jpg", "availableSizes":["45", "46"], "count": 1 },
+        { "id": 7, "title": "yyy", "price": 145, "imgLink" : "https://instella.ru/grph/221079-800x800-s/?h=e68dcb0a2ef8e427877e93dfdf85dc68", "availableSizes":["40", "41", "42", "43"], "count": 1 }
       ]
     }
