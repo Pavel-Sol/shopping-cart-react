@@ -20,6 +20,7 @@ function Product (props) {
                   item.availableSizes.map(item => <button onClick={() => setSize(item)}>{item}</button>)
                }
          </div>
+         <div>$: {item.price}</div>
          <hr/>
       </div>
    )

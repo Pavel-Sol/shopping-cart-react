@@ -8,6 +8,8 @@ function Cart(props) {
    // console.log(props)
    const cartItems = useSelector((state) => state.cartReducer.items);
    const dispatch = useDispatch();
+
+
    
 
    useEffect(() => {
@@ -30,11 +32,14 @@ function Cart(props) {
               (cartItems.length > 0) &&
                   cartItems.map(item => {
                      return <li>
-                        {item.title} size: {item.size} count: {item.count}
+                        {item.title} size: {item.size} count: {item.count} ЦЕНА:{item.price * item.count}
                         <button onClick={() => onDeleteItem(item)} >удалить</button>
                      </li>
                   })
                }
+               <h2>
+                  итого: {props.check}
+               </h2>
          </div>
       </div>
    )
