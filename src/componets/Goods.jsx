@@ -8,8 +8,7 @@ import Product from './Product'
 function Goods () {
    const dispatch = useDispatch();
    const mainGoods = useSelector((state) => state.reducer);
-   const cartItems = useSelector((state) => state.cartReducer);
-   
+   const cartItems = useSelector((state) => state.cartReducer.items);
    
 
    useEffect(() => {
