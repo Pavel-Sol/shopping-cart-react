@@ -6,7 +6,7 @@ function Product (props) {
    const [size, setSize] = useState('не выбран размер')
 
    return(
-      <div>
+      <div className='product'>
          <h3>{item.title}</h3>
          <div className='img__wrap'>
             <img src={item.imgLink} alt=""/> 

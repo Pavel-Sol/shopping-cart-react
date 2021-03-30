@@ -4,7 +4,8 @@ import { useEffect} from 'react';
 import {loadingFromLS} from '../../store/cartReducer'
 import {deleteItemFromCart} from '../../actions/cartActions'
  
-function Cart() {
+function Cart(props) {
+   // console.log(props)
    const cartItems = useSelector((state) => state.cartReducer.items);
    const dispatch = useDispatch();
    
@@ -23,8 +24,9 @@ function Cart() {
     } 
 
    return (
-      <div className='cart-mini__wrap'>
-            {
+      <div className={props.active ? "cart-modal active" :  "cart-modal"}  onClick={() => props.toogleModalCart(false)}>
+         <div className={props.active ? "cart-modal__content active" :  "cart-modal__content"}onClick={e => e.stopPropagation()} >
+         {
               (cartItems.length > 0) &&
                   cartItems.map(item => {
                      return <li>
@@ -33,7 +35,7 @@ function Cart() {
                      </li>
                   })
                }
-         <hr/>
+         </div>
       </div>
    )
 }

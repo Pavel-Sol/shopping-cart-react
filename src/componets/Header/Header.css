@@ -1,0 +1,18 @@
+.header__body {
+  height: 120px;
+  width: 100%;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.cart-wd {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(58, 10, 189);
+}
