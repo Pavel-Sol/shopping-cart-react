@@ -1,11 +1,11 @@
 import './App.css';
-import Goods from './componets/Goods';
-import CartMini from './componets/CartMini';
+import Goods from './componets/Goods/Goods';
+import Cart from './componets/Cart/Cart';
 
 function App() {
   return (
     <div className="App">
-      <CartMini />
+      <Cart />
       <Goods />
     </div>
   );

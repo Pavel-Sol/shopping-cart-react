@@ -1,11 +1,9 @@
 import {useState} from 'react';
+import './Product.css'
 
 function Product (props) {
    let item = props.item
    const [size, setSize] = useState('не выбран размер')
-
-
-
 
    return(
       <div>

@@ -2,7 +2,7 @@ const defaultState = [];
 
 const LOADING_ALL_GOODS = 'LOADING_ALL_GOODS';
 
-export const reducer = (state = defaultState, action) => {
+export const goodsReducer = (state = defaultState, action) => {
   switch (action.type) {
     case LOADING_ALL_GOODS:
       return [...state, ...action.payload];

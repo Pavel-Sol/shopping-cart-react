@@ -1,4 +1,4 @@
-import { loadingAllGoods } from '../store/reducer';
+import { loadingAllGoods } from '../store/goodsReducer';
 
 export const getAllGoods = () => {
   return (dispatch) => {

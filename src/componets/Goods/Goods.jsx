@@ -1,13 +1,14 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {useEffect} from 'react';
-import {getAllGoods} from '../actions/asyncActions'
-import {addItemToCart} from './../actions/cartActions'
-import Product from './Product'
+import {getAllGoods} from '../../actions/goodsActions'
+import {addItemToCart} from './../../actions/cartActions'
+import Product from './../Product/Product'
+import './Goods.css'
 
 function Goods () {
    const dispatch = useDispatch();
-   const mainGoods = useSelector((state) => state.reducer);
+   const goods = useSelector((state) => state.goodsReducer);
    const cartItems = useSelector((state) => state.cartReducer.items);
    
 
@@ -22,7 +23,7 @@ function Goods () {
      return (
       <div>
          {
-          mainGoods.map(item => {
+          goods.map(item => {
              return <Product item={item} addItem={addItem}/>
           })
          }

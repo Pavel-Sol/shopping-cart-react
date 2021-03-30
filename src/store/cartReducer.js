@@ -35,7 +35,6 @@ export const deleteFromCart = (payload) => {
 };
 
 export const loadingFromLS = (payload) => {
-  // debugger;
   return {
     type: LOADING_FROM_LS,
     payload,

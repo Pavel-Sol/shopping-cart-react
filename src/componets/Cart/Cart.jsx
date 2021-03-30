@@ -1,10 +1,10 @@
-import './CartMini.css'
+import './Cart.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect} from 'react';
-import {loadingFromLS} from './../store/cartReducer'
-import {deleteItemFromCart} from './../actions/cartActions'
+import {loadingFromLS} from '../../store/cartReducer'
+import {deleteItemFromCart} from '../../actions/cartActions'
  
-function CartMini() {
+function Cart() {
    const cartItems = useSelector((state) => state.cartReducer.items);
    const dispatch = useDispatch();
    
@@ -38,4 +38,4 @@ function CartMini() {
    )
 }
 
-export default CartMini
+export default Cart
