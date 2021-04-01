@@ -1,0 +1,13 @@
+.goods__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 170px;
+}
+
+@media screen and (max-width: 900px) {
+  .goods__wrap {
+    flex-direction: column;
+  }
+}

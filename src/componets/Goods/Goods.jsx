@@ -21,7 +21,7 @@ function Goods () {
     }
    
      return (
-      <div>
+      <div className='goods__wrap'>
          {
           goods.map(item => {
              return <Product item={item} addItem={addItem}/>
